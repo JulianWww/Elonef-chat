@@ -15,7 +15,7 @@ namespace Chat {
         public: CryptoPP::ByteQueue toQueue() const;
 
         struct Compare {
-            inline constexpr bool operator()( const ChatData& lhs, const ChatData& rhs ) const {
+            inline bool operator()( const ChatData& lhs, const ChatData& rhs ) const {
                 if (lhs.id == rhs.id) {
                     return lhs.name < rhs.name;
                 }
