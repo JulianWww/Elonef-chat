@@ -1,10 +1,6 @@
 name: Development Builds C++
 
-#on: [push]
-on:
-  push:
-    paths:
-      - "*"
+on: [push]
 
 jobs:
   node:
